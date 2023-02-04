@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/repetive_codes/styles.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>განათლება</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="left">
+        <header class="top-header">
+          
+          <button class="goBackBtn">
+            <a href="/Start/index.html"
+              ><img class="backBtn" src="/images/backBtn.png" alt=""
+            /></a>
+          </button>
+          
+          <div class="txt-container">
+            <h3 class="header_text">განათლება</h3>
+            <p class="pagination">3/3</p>
+          </div>
+        </header>
+        <hr />
+        <div class="form-container">
+          <form action="" class="form">
+            <div class="long_field">
+              <label for="phnumber" class="labels">სასწავლებელი</label>
+              <input
+                class="border"
+                type="text"
+                placeholder="სასწავლებელი"
+                required
+              />
+              <p class="guidlines">მინიმუმ 2 სიმბოლო</p>
+            </div>
+            
+            <div class="name-fields">
+              <div class="fname-wrap" s>
+                <label for="major" class="labels">დაწყების რიცხვი</label>
+                <select
+                  class="txt_input border"
+                  type=""
+                  name="major"
+                  required
+                >
+                <option selected disabled hidden>აირჩიეთ ხარისხი</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+              </div>
+              <div class="lname-wrap">
+                <label for="endDate" class="labels">დამთავრების რიცხვი</label>
+                <input
+                  class="txt_input border"
+                  type="date"
+                  placeholder="mm / dd / yyyy"
+                  name="endDate"
+                  required
+                />
+              </div>
+            </div>
+            <div class="aboutMe-container">
+              <label for="aboutMe" class="labels">აღწერა</label>
+              <input
+                type="text"
+                name="aboutMe"
+                placeholder="განათლების აღწერა"
+                class="border"
+              />
+            </div>
+          </form>
+        </div>
+
+        <hr>
+
+        <div class="all-btns">
+            <div class="extra-btn-container">
+            <button class="big-btn">
+                სხვა სასწავლებლის დამატება
+            </button>
+        </div>
+
+
+        <div class="btn-container">
+            <a href="/edu/edu.html"
+            ><button class="btn custom-btn">დასრულება</button></a
+          >
+          <a href="/general_Info/general_info.html"
+            ><button class="btn custom-btn custom-btn-back">უკან</button></a
+          >
+        </div>
+        </div>
+        
+      </div>
+      <div class="right">
+        <div class="bottom-img-container">
+          <img class="pagination-logo" src="/images/LOGO-12 1.png" alt="" />
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

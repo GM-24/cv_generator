@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 55%;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.right {
+  width: 45%;
+  height: 100vh;
+  background-color: white;
+}
+
+.txt-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header_text {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.pagination {
+  margin-right: 50px;
+}
+hr {
+  margin: 0 50px 0 100px;
+}
+
+.top-header {
+  margin: 10px 0 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.goBackBtn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.form {
+  margin: 30px 50px 0 100px;
+}
+
+.border {
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #6b40e3;
+  float: right;
+  margin-top: 65px;
+  margin-right: 50px;
+  color: white;
+  padding: 10px;
+  width: 151px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.pagination-logo {
+  width: 25px;
+  margin-left: 15px;
+  margin-top: 96%;
+}
+.long_field {
+  display: flex;
+  flex-direction: column;
+}
+
+.long_field label {
+  margin-bottom: 12px;
+}
+.long_field input {
+  padding: 5px;
+}
+
+.guidlines {
+  color: #2e2e2e;
+  font-weight: 400;
+  opacity: 0.5;
+  font-size: 14px;
+  margin: 5px 0 15px 0;
+}
+
+.labels {
+  font-weight: bolder;
+}
+
+.name-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.fname-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.lname-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt_input {
+  width: 320px;
+  padding: 5px;
+  margin-top: 8px;
+}
+
+.aboutMe-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.aboutMe-container label {
+  margin-bottom: 10px;
+}
+
+.aboutMe-container input {
+  padding-left: 5px;
+  padding-bottom: 65px;
+}
+
+.big-btn {
+  background-color: #6b40e3;
+  margin-right: 50px;
+  color: white;
+  padding: 10px;
+  width: 289px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.custom-btn {
+  margin-bottom: 150px;
+}
+
+.custom-btn-back {
+  margin-left: 100px;
+  float: left;
+}
+
+.big-btn {
+  width: 289px;
+  margin-left: 100px;
+  opacity: 0.7;
+}
+
+.all-btns {
+  margin-top: 50px;
+}
+
+.form {
+  width: 685px;
+  height: 368px;
+}
+
+.messed-up-btn {
+  margin-top: 200px;
+}

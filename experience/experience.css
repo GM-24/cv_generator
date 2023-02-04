@@ -1,0 +1,23 @@
+.custom-btn {
+  margin-bottom: 150px;
+}
+
+.custom-btn-back {
+  margin-left: 100px;
+  float: left;
+}
+
+.big-btn {
+  width: 289px;
+  margin-left: 100px;
+  opacity: 0.7;
+}
+
+.all-btns {
+  margin-top: 50px;
+}
+
+.form {
+  width: 685px;
+  height: 368px;
+}
