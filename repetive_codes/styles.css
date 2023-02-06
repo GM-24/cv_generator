@@ -78,11 +78,18 @@ hr {
   cursor: pointer;
 }
 
-.pagination-logo {
+/* .pagination-logo {
   width: 25px;
   margin-left: 15px;
   margin-top: 96%;
+} */
+
+.pagination-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
+
 .long_field {
   display: flex;
   flex-direction: column;
@@ -140,9 +147,12 @@ hr {
   margin-bottom: 10px;
 }
 
-.aboutMe-container input {
-  padding-left: 5px;
-  padding-bottom: 65px;
+.about-me-info {
+  padding: 5px;
+  width: 685px;
+  height: 80px;
+  resize: none;
+  overflow: auto;
 }
 
 .big-btn {
@@ -183,4 +193,12 @@ hr {
 
 .messed-up-btn {
   margin-top: 200px;
+}
+
+.job-desc-info {
+  padding: 5px;
+  width: 685px;
+  height: 80px;
+  resize: none;
+  overflow: auto;
 }

@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./general_info.css" />
+    <link rel="stylesheet" href="/right_side.css" />
     <link rel="stylesheet" href="/repetive_codes/styles.css" />
-    <script src="." defer></script>
+    <script src="/app.js" defer></script>
+    <script src="/about-me.js" defer></script>
+    <script src="/email_number.js" defer></script>
     <title>ზოგადი ინფორმაცია</title>
   </head>
   <body>
@@ -19,7 +22,7 @@
           <!-- btn container to go back -->
           <button class="goBackBtn">
             <a href="/Start/index.html"
-              ><img class="backBtn" src="/images/backBtn.png" alt=""
+              ><img class="backBtn reset-btn" src="/images/backBtn.png" alt=""
             /></a>
           </button>
           <!-- text container for the header  -->
@@ -36,7 +39,7 @@
               <div class="fname-wrap">
                 <label for="fname" class="labels">სახელი</label>
                 <input
-                  class="txt_input border"
+                  class="txt_input border test1"
                   type="text"
                   placeholder="ანზორ"
                   name="fname"
@@ -47,7 +50,7 @@
               <div class="lname-wrap">
                 <label for="lname" class="labels">გვარი</label>
                 <input
-                  class="txt_input border"
+                  class="txt_input border test2"
                   type="text"
                   placeholder="მუმლაძე"
                   name="lname"
@@ -64,18 +67,16 @@
               <label for="aboutMe" class="labels"
                 >ჩემ შესახებ(არასავალდებულო)</label
               >
-              <input
-                type="text"
+              <textarea
+                class="about-me-info"
                 name="aboutMe"
                 placeholder="ზოგადი ინფო ჩემს შესახებ"
-                class="border"
-              />
+              ></textarea>
             </div>
-
             <div class="long_field long_field_email">
               <label for="email" class="labels">ელ.ფოსტა</label>
               <input
-                class="border"
+                class="border email"
                 type="email"
                 name="email"
                 placeholder="anzor666@redberry.ge"
@@ -87,7 +88,7 @@
             <div class="long_field long_field_number">
               <label for="phnumber" class="labels">მობილურის ნომერი</label>
               <input
-                class="border"
+                class="border number"
                 type="number"
                 placeholder="+995 555 12 34 56"
                 required
@@ -100,13 +101,33 @@
         </div>
         <div class="btn-container">
           <a href="/experience/experience.html"
-            ><button class="btn messed-up-btn">შემდეგი</button></a
+            ><button class="btn messed-up-btn next-btn">შემდეგი</button></a
           >
         </div>
       </div>
 
       <!-- right side of the screen, here is the result -->
       <div class="right">
+        <div class="resume-info">
+          <div class="fullName">
+            <h1 class="fname color"></h1>
+            <h1 class="lname color"></h1>
+          </div>
+          <div class="contact-info">
+            <div class="icons">
+              <img class="email-icon hidden" src="/images/Vector.png" alt="" />
+              <p class="person-email"></p>
+            </div>
+            <div class="icons">
+              <img class="phone-icon hidden" src="/images/phone.png" alt="" />
+              <p class="person-number"></p>
+            </div>
+          </div>
+          <div class="basic-about-me-info">
+            <h3 class="about--me color hidden">ჩემ შესახებ</h3>
+            <p class="client-about-me-input"></p>
+          </div>
+        </div>
         <div class="bottom-img-container">
           <img class="pagination-logo" src="/images/LOGO-12 1.png" alt="" />
         </div>

@@ -1,0 +1,68 @@
+.right {
+  position: relative;
+}
+
+.bottom-img-container {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.pagination-logo {
+  width: 30px;
+}
+
+.resume-info {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullName {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.contact-info {
+  margin-top: 100px;
+}
+.fname {
+  margin-right: 15px;
+}
+
+.color {
+  color: #f93b1d;
+}
+
+.basic-about-me-info {
+  margin-top: 25px;
+}
+
+.client-about-me-input {
+  width: 350px;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons p {
+  margin-left: 10px;
+}
+
+.timeline {
+  display: flex;
+}
+
+.position-comp {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
+}

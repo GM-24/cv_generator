@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/repetive_codes/styles.css" />
+    <link rel="stylesheet" href="/right_side.css" />
     <link rel="stylesheet" href="./experience.css" />
-    <script src="./experience.js" defer></script>
+    <script src="/app.js" defer></script>
+    <script src="/email_number.js" defer></script>
+    <script src="/about-me.js" defer></script>
+    <script src="experience.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>გამოცდილება</title>
   </head>
@@ -31,8 +35,8 @@
             <div class="long_field">
               <label for="phnumber" class="labels">თანამდებობა</label>
               <input
-                class="border"
-                type="number"
+                class="border position-input"
+                type="text"
                 placeholder="დეველოპერი, დიზაინერი, ა.შ."
                 required
               />
@@ -41,8 +45,8 @@
             <div class="long_field">
               <label for="phnumber" class="labels">დამსაქმებელი</label>
               <input
-                class="border"
-                type="number"
+                class="border comp-name-input"
+                type="text"
                 placeholder="დამსაქმებელი."
                 required
               />
@@ -52,7 +56,7 @@
               <div class="fname-wrap" s>
                 <label for="startDate" class="labels">დაწყების რიცხვი</label>
                 <input
-                  class="txt_input border"
+                  class="txt_input border start-date"
                   type="date"
                   placeholder="mm / dd / yyyy"
                   name="startDate"
@@ -62,7 +66,7 @@
               <div class="lname-wrap">
                 <label for="endDate" class="labels">დამთავრების რიცხვი</label>
                 <input
-                  class="txt_input border"
+                  class="txt_input border end-date"
                   type="date"
                   placeholder="mm / dd / yyyy"
                   name="endDate"
@@ -71,18 +75,13 @@
               </div>
             </div>
             <div class="aboutMe-container">
-              <label for="aboutMe" class="labels">აღწერა</label>
-              <input
-                type="text"
-                name="aboutMe"
-                placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"
-                class="border"
-              />
+              <label for="jobExp" class="labels">აღწერა</label>
+              <textarea class="job-desc-info" name="jobExp" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
             </div>
           </form>
         </div>
 
-        <hr style="margin-top: 20px;">
+        <hr style="margin-top: 55px;">
 
         <div class="all-btns">
             <div class="extra-btn-container">
@@ -97,13 +96,51 @@
             ><button class="btn custom-btn">შემდეგი</button></a
           >
           <a href="/general_Info/general_info.html"
-            ><button class="btn custom-btn custom-btn-back">უკან</button></a
+            ><button class="btn custom-btn custom-btn-back prev-btn">უკან</button></a
           >
         </div>
         </div>
         
       </div>
       <div class="right">
+        <div class="resume-info">
+          <div class="fullName">
+            <h1 class="fname color"></h1>
+            <h1 class="lname color"></h1>
+          </div>
+          <div class="contact-info">
+            <div class="icons">
+              <img class="email-icon hidden" src="/images/Vector.png" alt="" />
+              <p class="person-email"></p>
+            </div>
+            <div class="icons">
+              <img class="phone-icon hidden" src="/images/phone.png" alt="" />
+              <p class="person-number"></p>
+            </div>
+          </div>
+          <div class="basic-about-me-info">
+            <h3 class="about--me color">ჩემ შესახებ</h3>
+            <p class="client-about-me-input"></p>
+          </div>
+          <hr style="margin-top: 10px; margin-left: -20px ;">
+          <div class="experience info">
+            <h3 class="color" style="margin-top: 10px;" >გამოცდილება</h3>
+            <div class="position-info-container">
+              <div class="position-comp">
+                <p class="position-info" style="margin:10px 0 5px 0;"></p>
+                <p class="comp-name"  style="margin:10px 0 5px 10px;"></p>
+              </div>
+              
+              <div class="timeline">
+                <p class="guidlines start-date-display"></p>
+                
+                <p class="guidlines end-date-display"></p>
+              </div>
+            </div>
+            <p class="job-desc"></p>
+          </div>
+        </div>
+       
         <div class="bottom-img-container">
           <img class="pagination-logo" src="/images/LOGO-12 1.png" alt="" />
         </div>

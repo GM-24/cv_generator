@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/repetive_codes/styles.css" />
-    
+    <link rel="stylesheet" href="/right_side.css">
+    <script src="/email_number.js" defer></script>
+    <script src="/app.js" defer></script>
+    <script src="/about-me.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>განათლება</title>
   </head>
@@ -68,12 +71,7 @@
             </div>
             <div class="aboutMe-container">
               <label for="aboutMe" class="labels">აღწერა</label>
-              <input
-                type="text"
-                name="aboutMe"
-                placeholder="განათლების აღწერა"
-                class="border"
-              />
+              <textarea class="about-me-info" name="aboutMe" placeholder="განათლების აღწერა"></textarea>
             </div>
           </form>
         </div>
@@ -92,7 +90,7 @@
             <a href="/edu/edu.html"
             ><button class="btn custom-btn">დასრულება</button></a
           >
-          <a href="/general_Info/general_info.html"
+          <a href="/experience/experience.html"
             ><button class="btn custom-btn custom-btn-back">უკან</button></a
           >
         </div>
@@ -100,6 +98,26 @@
         
       </div>
       <div class="right">
+       <div class="resume-info">
+          <div class="fullName">
+            <h1 class="fname color"></h1>
+            <h1 class="lname color"></h1>
+          </div>
+          <div class="contact-info">
+            <div class="icons">
+              <img class="email-icon hidden" src="/images/Vector.png" alt="" />
+              <p class="person-email"></p>
+            </div>
+            <div class="icons">
+              <img class="phone-icon hidden" src="/images/phone.png" alt="" />
+              <p class="person-number"></p>
+            </div>
+          </div>
+          <div class="basic-about-me-info">
+            <h3 class="about--me color">ჩემ შესახებ</h3>
+            <p class="client-about-me-input"></p>
+          </div>
+        </div>
         <div class="bottom-img-container">
           <img class="pagination-logo" src="/images/LOGO-12 1.png" alt="" />
         </div>
