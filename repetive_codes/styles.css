@@ -202,3 +202,11 @@ hr {
   resize: none;
   overflow: auto;
 }
+
+.education_desc {
+  padding: 5px;
+  width: 685px;
+  height: 80px;
+  resize: none;
+  overflow: auto;
+}

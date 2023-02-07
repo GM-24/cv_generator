@@ -10,6 +10,12 @@ if (!AboutMe) {
 
 aboutMe.innerHTML = AboutMe;
 
+if (sessionStorage.getItem("AboutMe")) {
+  header.classList.remove("hidden");
+} else {
+  header.classList.add("hidden");
+}
+
 aboutMeInput.onkeyup = () => {
   aboutMe.innerHTML = aboutMeInput.value;
   sessionStorage.setItem("AboutMe", aboutMeInput.value);
@@ -20,7 +26,3 @@ aboutMeInput.onkeyup = () => {
     header.classList.add("hidden");
   }
 };
-
-if (sessionStorage.getItem("AboutMe")) {
-  header.classList.remove("hidden");
-}

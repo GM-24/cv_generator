@@ -4,6 +4,7 @@ const compInput = document.querySelector(".comp-name-input");
 const compName = document.querySelector(".comp-name");
 const jobDesc = document.querySelector(".job-desc");
 const jobDescInput = document.querySelector(".job-desc-info");
+const header1 = document.querySelector(".header_1");
 
 const startDate = document.querySelector(".start-date");
 const endDate = document.querySelector(".end-date");
@@ -43,10 +44,22 @@ endDateDisplay.innerHTML = END_DATE;
 compName.innerHTML = COMP_NAME;
 jobDesc.innerHTML = JOB_DESC;
 
+if (sessionStorage.getItem("POSITION")) {
+  header1.classList.remove("hidden");
+} else {
+  header1.classList.add("hidden");
+}
+
 positionInput.onkeyup = () => {
   positionInfo.innerHTML = positionInput.value;
 
   sessionStorage.setItem("POSITION", positionInput.value);
+
+  if (positionInput.value) {
+    header1.classList.remove("hidden");
+  } else {
+    header1.classList.add("hidden");
+  }
 };
 
 compInput.onkeyup = () => {
@@ -54,18 +67,17 @@ compInput.onkeyup = () => {
 
   sessionStorage.setItem("COMP_NAME", compInput.value);
 };
+jobDescInput.onkeyup = () => {
+  jobDesc.innerHTML = jobDescInput.value;
+  sessionStorage.setItem("JOB_DESC", jobDescInput.value);
+};
 
-startDate.addEventListener("click", () => {
+startDate.addEventListener("change", () => {
   startDateDisplay.innerHTML = startDate.value + "  -  ";
   sessionStorage.setItem("START_DATE", startDate.value);
 });
 
-endDate.addEventListener("click", () => {
+endDate.addEventListener("change", () => {
   endDateDisplay.innerHTML = endDate.value;
   sessionStorage.setItem("END_DATE", endDate.value);
 });
-
-jobDesc.onkeyup = () => {
-  jobDesc.innerHTML = jobDescInput.value;
-  sessionStorage.setItem("JOB_DESC", jobDescInput.value);
-};

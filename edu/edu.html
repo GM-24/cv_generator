@@ -8,6 +8,9 @@
     <script src="/email_number.js" defer></script>
     <script src="/app.js" defer></script>
     <script src="/about-me.js" defer></script>
+    <script src="/experience/experience.js" defer></script>
+    <script src="/api.js" defer></script>
+    <script src="edu.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>განათლება</title>
   </head>
@@ -33,7 +36,7 @@
             <div class="long_field">
               <label for="phnumber" class="labels">სასწავლებელი</label>
               <input
-                class="border"
+                class="border uni-name-input"
                 type="text"
                 placeholder="სასწავლებელი"
                 required
@@ -43,25 +46,20 @@
             
             <div class="name-fields">
               <div class="fname-wrap" s>
-                <label for="major" class="labels">დაწყების რიცხვი</label>
+                <label for="major" class="labels">ხარისხი</label>
                 <select
-                  class="txt_input border"
+                  class="txt_input border option-container"
                   type=""
                   name="major"
                   required
                 >
                 <option selected disabled hidden>აირჩიეთ ხარისხი</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                    <option value="5">Five</option>
                 </select>
               </div>
               <div class="lname-wrap">
                 <label for="endDate" class="labels">დამთავრების რიცხვი</label>
                 <input
-                  class="txt_input border"
+                  class="txt_input border uni_end_date"
                   type="date"
                   placeholder="mm / dd / yyyy"
                   name="endDate"
@@ -70,8 +68,8 @@
               </div>
             </div>
             <div class="aboutMe-container">
-              <label for="aboutMe" class="labels">აღწერა</label>
-              <textarea class="about-me-info" name="aboutMe" placeholder="განათლების აღწერა"></textarea>
+              <label for="description" class="labels">აღწერა</label>
+              <textarea class="education_desc" name="description" placeholder="განათლების აღწერა"></textarea>
             </div>
           </form>
         </div>
@@ -116,6 +114,40 @@
           <div class="basic-about-me-info">
             <h3 class="about--me color">ჩემ შესახებ</h3>
             <p class="client-about-me-input"></p>
+          </div>
+          <hr style="margin-top: 10px; margin-left: -20px ;">
+          <div class="experience_info">
+            <h3 class="color header_1" style="margin-top: 10px;" >გამოცდილება</h3>
+            <div class="position-info-container">
+              <div class="position-comp">
+                <p class="position-info" style="margin:10px 0 5px 0;"></p>
+                <p class="comp-name"  style="margin:10px 0 5px 10px;"></p>
+              </div>
+              
+              <div class="timeline">
+                <p class="guidlines start-date-display"></p>
+                
+                <p class="guidlines end-date-display"></p>
+              </div>
+            </div>
+            <p class="job-desc"></p>
+          </div>
+          <hr style="margin-top: 10px; margin-left: -20px ;">
+          <div class="education_info">
+            <h3 class="color header_2 hidden" style="margin-top: 10px;" >განათლება</h3>
+            <div class="position-info-container">
+              <div class="position-comp">
+                <p class="uni-name" style="margin:10px 0 5px 0;"></p>
+                <p class="degree"  style="margin:10px 0 5px 10px; font-size: 15px;"></p>
+              </div>
+              
+              <div class="timeline">
+                
+                
+                <p class="guidlines uni-end-date-display"></p>
+              </div>
+            </div>
+            <p class="uni-desc">adfadfasdfasdf</p>
           </div>
         </div>
         <div class="bottom-img-container">
