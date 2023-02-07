@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "HelveticaNeue";
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/HelveticaNeue.ttc") format("truetype");
+}
+
 .container-wrapper {
   margin: 0;
   display: flex;

@@ -1,3 +1,12 @@
+body {
+  font-family: "HelveticaNeue";
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/HelveticaNeue.ttc") format("truetype");
+}
+
 .right {
   position: relative;
 }

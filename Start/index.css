@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url(/HelveticaNeue.ttc) format("truetype");
+  src: url("/HelveticaNeue.ttc") format("truetype");
 }
 
 body {
