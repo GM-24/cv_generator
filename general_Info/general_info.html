@@ -10,22 +10,18 @@
     <script src="/app.js" defer></script>
     <script src="/about-me.js" defer></script>
     <script src="/email_number.js" defer></script>
+    <script src="/data-validation.js" defer></script>
     <title>ზოგადი ინფორმაცია</title>
   </head>
   <body>
-    <!-- this wraps the whole container -->
     <div class="container-wrapper">
-      <!-- the left side of the screen, here goes form and btns  -->
       <div class="left">
-        <!-- header component -->
         <header class="top-header">
-          <!-- btn container to go back -->
           <button class="goBackBtn">
             <a href="/Start/index.html"
               ><img class="backBtn reset-btn" src="/images/backBtn.png" alt=""
             /></a>
           </button>
-          <!-- text container for the header  -->
           <div class="txt-container">
             <h3 class="header_text">პირადი ინფო</h3>
             <p class="pagination">1/3</p>
@@ -37,25 +33,32 @@
           <form action="" class="form">
             <div class="name-fields">
               <div class="fname-wrap">
-                <label for="fname" class="labels">სახელი</label>
-                <input
-                  class="txt_input border test1"
-                  type="text"
-                  placeholder="ანზორ"
-                  name="fname"
-                  required
-                />
+                <div class="input-container">
+                  <label for="fname" class="labels">სახელი</label>
+                  <input
+                    class="txt_input border test1 name-input"
+                    type="text"
+                    placeholder="ანზორ"
+                    name="fname"
+                    required
+                  />
+                  <img class="error fname-error hide" src="/error.png" alt="" />
+                </div>
                 <p class="guidlines">მინიმუმ 2 ასო, ქართული ასოები</p>
               </div>
               <div class="lname-wrap">
-                <label for="lname" class="labels">გვარი</label>
-                <input
-                  class="txt_input border test2"
-                  type="text"
-                  placeholder="მუმლაძე"
-                  name="lname"
-                  required
-                />
+                <div class="input-container">
+                  <label for="lname" class="labels">გვარი</label>
+                  <input
+                    class="txt_input border test2 lname"
+                    type="text"
+                    placeholder="მუმლაძე"
+                    name="lname"
+                    required
+                  />
+                  <img class="error lname-error hide" src="/error.png" alt="" />
+                </div>
+
                 <p class="guidlines">მინიმუმ 2 ასო, ქართული ასოები</p>
               </div>
             </div>
@@ -76,24 +79,31 @@
 
             <div class="long_field long_field_email">
               <label for="email" class="labels">ელ.ფოსტა</label>
-              <input
-                class="border email"
-                type="email"
-                name="email"
-                placeholder="anzor666@redberry.ge"
-                required
-              />
+              <div class="width email-container">
+                <input
+                  class="border email"
+                  type="email"
+                  name="email"
+                  placeholder="anzor666@redberry.ge"
+                  required
+                />
+                <img class="email-error hide" src="/error.png" alt="" />
+              </div>
+
               <p class="guidlines">უნდა მთავრდებოდეს @redberry.ge-ით</p>
             </div>
 
             <div class="long_field long_field_number">
               <label for="phnumber" class="labels">მობილურის ნომერი</label>
-              <input
-                class="border number"
-                type="number"
-                placeholder="+995 555 12 34 56"
-                required
-              />
+              <div class="width phone-container">
+                <input
+                  class="border number"
+                  type="tel"
+                  placeholder="+995 555 12 34 56"
+                  required
+                />
+              </div>
+
               <p class="guidlines">
                 უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს
               </p>
@@ -107,7 +117,6 @@
         </div>
       </div>
 
-      <!-- right side of the screen, here is the result -->
       <div class="right">
         <div class="resume-info">
           <div class="fullName">
