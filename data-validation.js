@@ -1,13 +1,10 @@
 const nameInput = document.querySelector(".name-input");
 const lnameInput = document.querySelector(".lname");
 const EmailInput = document.querySelector(".email");
-const jobInput = document.querySelector(".position-input");
-const compinput = document.querySelector(".comp-name-input");
+
 const fnameErr = document.querySelector(".fname-error");
 const lnameErr = document.querySelector(".lname-error");
 const emailError = document.querySelector(".email-error");
-const positionErr = document.querySelector(".fckingError");
-const compErr = document.querySelector(".anotherFckingError");
 
 const geoAlph = /^[ა-ჰ]+$/;
 const validEmail = /^.*@redberry\.ge$/;
@@ -40,13 +37,5 @@ EmailInput.addEventListener("input", () => {
   } else {
     EmailInput.classList.remove("check");
     emailError.classList.remove("hide");
-  }
-});
-
-jobInput.addEventListener("input", () => {
-  if (jobInput.value.length <= 2) {
-    positionErr.classList.remove("hide");
-  } else {
-    positionErr.classList.add("hide");
   }
 });

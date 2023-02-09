@@ -8,6 +8,8 @@ const EndDateDisplay = document.querySelector(".uni-end-date-display");
 const uniDesc = document.querySelector(".uni-desc");
 const uniDescInput = document.querySelector(".education_desc");
 
+const uniErr = document.querySelector(".uniErr");
+
 let UNI_NAME = sessionStorage.getItem("UNI_NAME");
 let UNI_END_DATE = sessionStorage.getItem("UNI_END_DATE");
 let SELECTED = sessionStorage.getItem("SELECTED");
@@ -57,4 +59,14 @@ uniEndDateInput.addEventListener("change", () => {
 select.addEventListener("change", () => {
   option.innerHTML = select.value;
   sessionStorage.setItem("SELECTED", select.value);
+});
+
+uniNameInput.addEventListener("input", () => {
+  if (uniNameInput.value.length <= 2) {
+    uniErr.classList.remove("hide");
+    uniNameInput.classList.remove("check");
+  } else {
+    uniErr.classList.add("hide");
+    uniNameInput.classList.add("check");
+  }
 });
