@@ -1,5 +1,5 @@
 const nameInput = document.querySelector(".name-input");
-const lnameInput = document.querySelector(".lname");
+const lnameInput = document.querySelector(".lName");
 const EmailInput = document.querySelector(".email");
 
 const fnameErr = document.querySelector(".fname-error");

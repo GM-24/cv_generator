@@ -2,8 +2,6 @@ let input1 = document.querySelector(".test1");
 let input2 = document.querySelector(".test2");
 
 const nextBtn = document.querySelector(".next-btn");
-const prevtBtn = document.querySelector(".prev-btn");
-const resetBtn = document.querySelector(".reset-btn");
 
 const fname = document.querySelector(".fname");
 const lname = document.querySelector(".lname");
@@ -29,22 +27,4 @@ input1.onkeyup = () => {
 input2.onkeyup = () => {
   lname.innerHTML = input2.value;
   sessionStorage.setItem("lastName", input2.value);
-};
-
-nextBtn.onclick = () => {
-  if (!sessionStorage.getItem("firstName")) {
-    sessionStorage.setItem("firstName", input1.value);
-  }
-  if (!sessionStorage.getItem("lastName")) {
-    sessionStorage.setItem("lastName", input2.value);
-  }
-};
-
-prevtBtn.onclick = () => {
-  if (!sessionStorage.getItem("firstName")) {
-    sessionStorage.setItem("firstName", input1.value);
-  }
-  if (!sessionStorage.getItem("lastName")) {
-    sessionStorage.setItem("lastName", input2.value);
-  }
 };
