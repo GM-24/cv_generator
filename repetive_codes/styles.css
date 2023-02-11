@@ -245,3 +245,7 @@ hr {
 .width input {
   width: 685px;
 }
+
+.disabled {
+  opacity: 0.5;
+}

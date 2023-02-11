@@ -8,6 +8,8 @@ const EndDateDisplay = document.querySelector(".uni-end-date-display");
 const uniDesc = document.querySelector(".uni-desc");
 const uniDescInput = document.querySelector(".education_desc");
 
+const finishBtn = document.querySelector(".finishBtn");
+
 const uniErr = document.querySelector(".uniErr");
 
 let UNI_NAME = sessionStorage.getItem("UNI_NAME");
@@ -70,3 +72,21 @@ uniNameInput.addEventListener("input", () => {
     uniNameInput.classList.add("check");
   }
 });
+
+function checkClass() {
+  if (
+    uniNameInput.classList.contains("check") &&
+    option.value != "" &&
+    uniEndDateInput.value != ""
+  ) {
+    finishBtn.disabled = false;
+    finishBtn.classList.remove("disabled");
+  } else {
+    finishBtn.disabled = true;
+    finishBtn.classList.add("disabled");
+  }
+}
+
+uniNameInput.addEventListener("input", checkClass);
+option.addEventListener("input", checkClass);
+uniEndDateInput.addEventListener("input", checkClass);

@@ -1,7 +1,7 @@
 let input1 = document.querySelector(".test1");
 let input2 = document.querySelector(".test2");
 
-const nextBtn = document.querySelector(".next-btn");
+// const nextBtn = document.querySelector(".next-btn");
 
 const fname = document.querySelector(".fname");
 const lname = document.querySelector(".lname");

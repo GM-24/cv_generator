@@ -12,6 +12,7 @@
     <script src="/email_number.js" defer></script>
     <script src="/data-validation.js" defer></script>
     <script src="/allClear.js" defer></script>
+    <script src="/disableBtn.js" defer></script>
     <title>ზოგადი ინფორმაცია</title>
   </head>
   <body>
@@ -37,7 +38,7 @@
                 <div class="input-container">
                   <label for="fname" class="labels">სახელი</label>
                   <input
-                    class="txt_input border test1 name-input"
+                    class="txt_input border test1 name-input iMessedUp"
                     type="text"
                     placeholder="ანზორ"
                     name="fname"
@@ -51,7 +52,7 @@
                 <div class="input-container">
                   <label for="lname" class="labels">გვარი</label>
                   <input
-                    class="txt_input border test2 lName"
+                    class="txt_input border test2 lName lastF-ing_name"
                     type="text"
                     placeholder="მუმლაძე"
                     name="lname"
@@ -82,7 +83,7 @@
               <label for="email" class="labels">ელ.ფოსტა</label>
               <div class="width email-container">
                 <input
-                  class="border email"
+                  class="border email mf-email"
                   type="email"
                   name="email"
                   placeholder="anzor666@redberry.ge"
@@ -113,7 +114,9 @@
         </div>
         <div class="btn-container">
           <a href="/experience/experience.html"
-            ><button class="btn messed-up-btn next-btn">შემდეგი</button></a
+            ><button class="btn messed-up-btn next-btn disabled" disabled>
+              შემდეგი
+            </button></a
           >
         </div>
       </div>
