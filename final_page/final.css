@@ -93,3 +93,12 @@ body {
   margin-top: 20px;
   width: 30px;
 }
+
+.image {
+  position: relative;
+  float: right;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  top: 0;
+}

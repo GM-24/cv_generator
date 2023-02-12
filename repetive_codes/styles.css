@@ -249,3 +249,13 @@ hr {
 .disabled {
   opacity: 0.5;
 }
+
+.image {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
+  right: 0;
+}

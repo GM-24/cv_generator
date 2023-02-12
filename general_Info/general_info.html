@@ -13,6 +13,7 @@
     <script src="/data-validation.js" defer></script>
     <script src="/allClear.js" defer></script>
     <script src="/disableBtn.js" defer></script>
+    <script src="/uploadImg.js" defer></script>
     <title>ზოგადი ინფორმაცია</title>
   </head>
   <body>
@@ -66,7 +67,13 @@
             </div>
             <div class="file_upload">
               <label for="file" class="labels">პირადი ფოტოს ატვირთვა</label>
-              <input type="file" name="file" required placeholder="ატვირთვა" />
+              <input
+                type="file"
+                name="file"
+                class="image-uploader"
+                required
+                placeholder="ატვირთვა"
+              />
             </div>
             <div class="aboutMe-container">
               <label for="aboutMe" class="labels"
@@ -123,6 +130,7 @@
 
       <div class="right">
         <div class="resume-info">
+          <div class="img-container"><img src="" alt="" class="image" /></div>
           <div class="fullName">
             <h1 class="fname color"></h1>
             <h1 class="lname color"></h1>
